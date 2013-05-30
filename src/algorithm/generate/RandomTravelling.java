@@ -21,7 +21,7 @@ public class RandomTravelling extends TSP {
         int index = 0;
         for (int node: list) {
             index++;
-            setNodes(index, node);
+            setNode(index, node);
         }
     }
 

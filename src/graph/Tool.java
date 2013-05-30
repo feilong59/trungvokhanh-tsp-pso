@@ -25,6 +25,10 @@ public class Tool {
         return tokens;
     }
     
+    public static double distance(Node first, Node second) {
+        return Math.pow(Math.pow(first.getX() - second.getX(), 2) + Math.pow(first.getY() - second.getY(), 2), 0.5);
+    }
+    
     public static void readData(String fileName, Graph g) throws NumberFormatException, IOException {
         int n;
         BufferedReader br = null;

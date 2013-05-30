@@ -8,7 +8,7 @@ import org.apache.hadoop.io.Text;
 import org.apache.hadoop.mapreduce.Mapper;
 
 public class PSOMapper extends Mapper<LongWritable, Text, Text, Text> {
-    public static final int NUMBER_OF_PARTICLES  = 50;
+    public static final int NUMBER_OF_PARTICLES  = 100;
     Random rand = new Random();
     
     public void map(LongWritable lineNumber, Text line, Context context) throws IOException, InterruptedException {
